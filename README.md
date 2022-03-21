@@ -124,7 +124,7 @@ $$P(X \in S) = P({x \in \Omega | X(x) \in S})$$
 3. Conti Random Var
     - range = uncoutable subset of real space w prob in the range [0,\\(\infty\\)]
     - pdf...probability dense function
-        1. \\(f_x(x) \ge 0\\), for all \\(x \in \mathbb{R}\_X\\).
+        1. ```math \\(f_x(x) \ge 0\\), for all \\(x \in \mathbb{R}\_X\\). ```
         2. \\(\int\_{-\infty}^\infty f_x(x)dx = 1\\)
         3. \\(F*X(b) - F_X(a) = \int*{a}^b f(x)dx,\ a < b, (a, b) \in \mathbb{R}\\)
     - cdf f conti RV.... cumulative distribution func
