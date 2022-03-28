@@ -15,9 +15,9 @@
 
 -   e.g.
 
-> outcomes - {(H,T), (H, H), (H, H)}
-> Events - {(H,T: 1). (H, H: 2)}
-> Sample space - {(H, H), (T , T), (H, T), (T, H)}
+> outcomes - {(H,T), (H, H), (H, H)}<br>
+> Events - {(H,T: 1). (H, H: 2)}<br>
+> Sample space - {(H, H), (T , T), (H, T), (T, H)}<br>
 
 ### Probability Sapce & Probability
 
@@ -28,9 +28,9 @@ combinaton of a sample space, event space, and probability funcion
 -   0 &le; P(E) &le; 1
     <br>
 -   P(S) = 1 where S is the sample space
-    <br>
+    <br><br>
 -   <img src="https://render.githubusercontent.com/render/math?math=P(\bigcup_{i=1}^\infty E_i) = \sum_{i=1}^\infty P(E_i)">
-> &bigcup; means union of X<sub>i</sub>
+    > &bigcup; means union of X<sub>i</sub>
 
 ## Probability Rules
 
@@ -57,10 +57,10 @@ combinaton of a sample space, event space, and probability funcion
 ### Factoring joint probabilitie
 
 -   chain rule for simplifying joint probabilities to tractable/know distributions
-<br>
-<img src="https://render.githubusercontent.com/render/math?math=P(A,B) = P(A|B) \ast P(B)">
-<br>
-<img src="https://render.githubusercontent.com/render/math?math=P(A,B,C) = P(A|B,C) \ast P(B,C) = P(A|B,C) \ast P(B|C) \ast P(C)">
+    <br>
+    <img src="https://render.githubusercontent.com/render/math?math=P(A,B) = P(A|B) \ast P(B)">
+    <br>
+    <img src="https://render.githubusercontent.com/render/math?math=P(A,B,C) = P(A|B,C) \ast P(B,C) = P(A|B,C) \ast P(B|C) \ast P(C)">
 
 ### Random Varable
 
@@ -107,8 +107,8 @@ This mapping defines the probability giving by X in a measurable set as:
             - <img src="https://render.githubusercontent.com/render/math?math=\\(\mathcal{F} = \{S, \bar{S}, E, \bar{E} \})">
             - <img src="https://render.githubusercontent.com/render/math?math=\\(E = \{(HH),(TT)\})">
         - Prob Func
-            - \\(X \sim Bern(\theta)\\)
-            - <img src="https://render.githubusercontent.com/render/math?math=f(x;\theta) = \theta^x(1-\theta)^{(1-x)}">
+            - <img src="https://render.githubusercontent.com/render/math?math=\\(X \sim Bern(\theta)\\)">
+            - <img src="https://render.githubusercontent.com/render/math?math=f(x|\theta) = \theta^x(1-\theta)^{(1-x)}">
 2. Discrete Random Var
     - characteriezed by countable outcome spaces
     - pmd...probability mass function
@@ -119,18 +119,18 @@ This mapping defines the probability giving by X in a measurable set as:
         1. <img src="https://render.githubusercontent.com/render/math?math=F_X(b) = \sum_{x \in [-\infty,b]} f_X(x)">
         2. properties
             - non-decreasing: <img src="https://render.githubusercontent.com/render/math?math=F_X(x) \le F_X(y)$, for all $x \le y">
-            - right-continuous: <img src="https://render.githubusercontent.com/render/math?math=\lim_{x \downarrow x_0^+} F_X(x) = F_X(x_0)">
+            - right-continuous: <img src="https://render.githubusercontent.com/render/math?math=\lim_{x}_{\downarrow}_{x_0} F_X(x) = F_X(x_0)">
             - positive, with range [0,1]
 3. Conti Random Var
     - range = uncoutable subset of real space w prob in the range <img src="https://render.githubusercontent.com/render/math?math=[0,\\(\infty\\)]">
     - pdf...probability dense function
         1. <img src="https://render.githubusercontent.com/render/math?math=\\(f_x(x) \ge 0\\), for all \\(x \in \mathbb{R}\_X\\)">
-        3. <img src="https://render.githubusercontent.com/render/math?math=\\(\int\_{-\infty}^\infty f_x(x)dx = 1\\)">
-        4. <img src="https://render.githubusercontent.com/render/math?math=\\(F*X(b) - F_X(a) = \int*{a}^b f(x)dx,\ a < b, (a, b) \in \mathbb{R}\\)">
+        2. <img src="https://render.githubusercontent.com/render/math?math=\\(\int\_{-\infty}^\infty f_x(x)dx = 1\\)">
+        3. <img src="https://render.githubusercontent.com/render/math?math=\\(F*X(b) - F_X(a) = \int*{a}^b f(x)dx,\ a < b, (a, b) \in \mathbb{R}\\)">
     - cdf f conti RV.... cumulative distribution func
         1. <img src="https://render.githubusercontent.com/render/math?math=\\(P(X \le x) = F*X(x) = \int*{-\infty}^x f(u)du\\)">
-            - reverting back to pdf
-                - <img src="https://render.githubusercontent.com/render/math?math=\\(f(x) = \frac{dF(x)}{dx}\\)">
+           - reverting back to pdf
+               - <img src="https://render.githubusercontent.com/render/math?math=\\(f(x) = \frac{dF(x)}{dx}\\)">
     - e.g. Normal distri
         - <img src="https://render.githubusercontent.com/render/math?math=X \sim Norm(\mu,\sigma^2) \text{, where}">
         - <img src="https://render.githubusercontent.com/render/math?math=f_x(x,\mu,\sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}, (x,\mu,\sigma^2) \in (\mathbb{R},\mathbb{R},\mathbb{R}_+)">
@@ -156,9 +156,10 @@ e.g. Expectation, Variance, Skewness, Kurtosis
     -   <img src="https://render.githubusercontent.com/render/math?math=\alpha_4 = \frac{E(X-E[X])^4}{(\sqrt{Var(X)})^4}">
 
 > Properties
-    >> <img src="https://render.githubusercontent.com/render/math?math=\\(Var(X) = E[(X-E[X])^2] = E[X^2] - (E[X])^2\\)">
-    >> <img src="https://render.githubusercontent.com/render/math?math=\\(Var(c) = 0\\), where c is a constant">
-    >> <img src="https://render.githubusercontent.com/render/math?math=\\(Var(aX_1 + bX_2) = a^2Var(X_1) + b^2Var(X_2)\\)">
+>
+> > <img src="https://render.githubusercontent.com/render/math?math=\\(Var(X) = E[(X-E[X])^2] = E[X^2] - (E[X])^2\\)">
+> > <img src="https://render.githubusercontent.com/render/math?math=\\(Var(c) = 0\\), where c is a constant">
+> > <img src="https://render.githubusercontent.com/render/math?math=\\(Var(aX_1 + bX_2) = a^2Var(X_1) + b^2Var(X_2)\\)">
 
 ### jjoint distriutions, expectations and covariances w 2 Variables
 
@@ -166,8 +167,8 @@ e.g. Expectation, Variance, Skewness, Kurtosis
 random variable"s" w different distriution
 ```
 
-- <img src="https://render.githubusercontent.com/render/math?math=P_{XY}(x,y) = P(X=x,Y=y)">
-- <img src="https://render.githubusercontent.com/render/math?math=E[f(x,y)] = \int_{x,y} f(x,y) p(x,y) dxdy">
+-   <img src="https://render.githubusercontent.com/render/math?math=P_{XY}(x,y) = P(X=x,Y=y)">
+-   <img src="https://render.githubusercontent.com/render/math?math=E[f(x,y)] = \int_{x,y} f(x,y) p(x,y) dxdy">
 
 ### Marginal / Conditional / Covar
 
@@ -177,8 +178,8 @@ random variable"s" w different distriution
 given a joint distribution of X, Y
 ```
 
-- formula (marginal of x... bc summimg up effectof y)
-    - <img src="https://render.githubusercontent.com/render/math?math=\\(P*X(x) = \sum*{all y*i} P*{XY}(x,y_i)\\)">
+-   formula (marginal of x... bc summimg up effectof y)
+    -   <img src="https://render.githubusercontent.com/render/math?math=\\(P*X(x) = \sum*{all y*i} P*{XY}(x,y_i)\\)">
 
 #### Conditional distribution
 
@@ -209,108 +210,148 @@ In the discrete case, if we can find a pair (x,y) that violate the product rule,
 <img src="https://render.githubusercontent.com/render/math?math=\rho_{XY} = \frac{Cov(X,Y)}{\sigma_x\sigma_y}">
 
 ## MoM & MLE (Estimation)
-### Estimators Properties 
+
+### Estimators Properties
+
 1. Consistency (Variance)
     - <img src="https://render.githubusercontent.com/render/math?math=P(|\theta_n-\theta |>0) \to 0 \text{ as } n \to \\infty">
     - As sample gets to infinity, the estimator converges in probability to <img src="https://render.githubusercontent.com/render/math?math=\\(\theta\\)">
 2. Bias
     - <img src="https://render.githubusercontent.com/render/math?math=\\(\theta\\)"> 
-    is unbiased if 
-    <img src="https://render.githubusercontent.com/render/math?math=E(\theta_n)=\theta">
-3. Efficiency 
+      is unbiased if 
+      <img src="https://render.githubusercontent.com/render/math?math=E(\theta_n)=\theta">
+3. Efficiency
     - Estimators w. ...
         - lowest possible vaiance
         - unbiased
-4. MSE (Mean Squaed Error) 
+4. MSE (Mean Squaed Error)
     - <img src="https://render.githubusercontent.com/render/math?math=MSE={Variance}"> + <img src="https://render.githubusercontent.com/render/math?math={bias}^2">
     - measure of trade off b/t ...
         - accuracy (spread)
         - precision (location)
 
-### MoM (Method of Moments) 
-``` amouting tomatching population moments to sample momens ```
-1. Formula
-    - <img src="https://render.githubusercontent.com/render/math?math=E[f] = \int f(x)^r p(x) dx \approx \frac{1}{N} \sum f(x)^r p(x)">
-    <br>
-    where <img src="https://render.githubusercontent.com/render/math?math=\\(f(x)=x\\) and \\(r=1\\)">, amounting to 
-    <br>
-    <img src="https://render.githubusercontent.com/render/math?math=\mu \approx \bar{x}">
+### MoM (Method of Moments)
 
-2. Properties 
+`amouting tomatching population moments to sample momens`
+
+1. Formula
+
+    - <img src="https://render.githubusercontent.com/render/math?math=E[f] = \int f(x)^r p(x) dx \approx \frac{1}{N} \sum f(x)^r p(x)">
+      <br>
+      where <img src="https://render.githubusercontent.com/render/math?math=\\(f(x)=x\\) and \\(r=1\\)">, amounting to 
+      <br>
+      <img src="https://render.githubusercontent.com/render/math?math=\mu \approx \bar{x}">
+
+2. Properties
+
     - \# of moments required = # of param est
 
 3. e.g. <img src="https://render.githubusercontent.com/render/math?math=\\(X_i \sim Bern(\theta)\\)">
     - pmf
         - <img src="https://render.githubusercontent.com/render/math?math=f(x|\theta) = \theta^x(1-\theta)^{(1-x)}">
-    - scenario 
+    - scenario
         - N=20
         - {1,1,0,1,1,1,1,0,1,0,1,0,1,1,0,0,1,1,1,0} (13 heads)
-    - Mean & Var esitmation 
-        - ...for population 
+    - Mean & Var esitmation
+        - ...for population
             - <img src="https://render.githubusercontent.com/render/math?math=E[X] = \sum_x x f(x) = \sum_x x [\theta^x(1-\theta)^{(1-x)}] = 0\ast(1-\theta) + 1\ast\theta = \theta">
             - <img src="https://render.githubusercontent.com/render/math?math=Var(X) = \theta(1-\theta)">
-        - matching sample momnt to popu moment 
+        - matching sample momnt to popu moment
             - <img src="https://render.githubusercontent.com/render/math?math=\hat{\theta} = \frac{1}{N} \sum_N x_i = \frac{13}{20}">
 
-
-
 ### MLE (Maximum Likelihood Estimation)
+
 ##### Assumption
+
 > data results from independet & identically distributed obs from a population <br>
-    
-##### Goal 
+
+##### Goal
+
 > find a /theta that max the likelihood of observing the data
 
 ##### Likelihood func
+
 <img src="https://render.githubusercontent.com/render/math?math=\mathcal{L}(\theta|x_1 ... x_n) = \prod_{i=1}^n f(x_i | \theta)">
 
-- solving the below func
-    - <img src="https://render.githubusercontent.com/render/math?math=\\(\frac{d}{d\theta}\mathcal{L}(\theta|{x})=0\\)">
-    - making sure it's max and not on the boundary 
+-   solving the below func
 
-- Conversion to Log Likelihood 
+    -   <img src="https://render.githubusercontent.com/render/math?math=\\(\frac{d}{d\theta}\mathcal{L}(\theta|{x})=0\\)">
+    -   making sure it's max and not on the boundary
 
-    - Rsn
+-   Conversion to Log Likelihood
 
-        - ease of cimputation 
+    -   Rsn
 
-    - formula
+        -   ease of cimputation
 
-        - <img src="https://render.githubusercontent.com/render/math?math=\\(ln \mathcal{L}(\theta|x_1 ... x_n) = (\sum_{i=1}^n x_i) ln \theta + (\sum_{i=1}^n (1-x_i)) ln (1-\theta)\\)">
+    -   formula
 
-    - differentiating wrt to &theta;
+        -   <img src="https://render.githubusercontent.com/render/math?math=\\(ln \mathcal{L}(\theta|x_1 ... x_n) = (\sum_{i=1}^n x_i) ln \theta + (\sum_{i=1}^n (1-x_i)) ln (1-\theta)\\)">
 
-        - <img src="https://render.githubusercontent.com/render/math?math=\\((\sum_{i=1}^n x_i)\frac{1}{\hat{\theta}} -(\sum_{i=1}^n (1-x_i))\frac{1}{1-\hat{\theta}}\\) = 0">
+    -   differentiating wrt to &theta;
 
-
+        -   <img src="https://render.githubusercontent.com/render/math?math=\\((\sum_{i=1}^n x_i)\frac{1}{\hat{\theta}} -(\sum_{i=1}^n (1-x_i))\frac{1}{1-\hat{\theta}}\\) = 0">
 
 ### MAP (Maximum a posteriori probability estimate)
-``` augmented MLE using prior (additional informaton)```
-- Prior
+
+` augmented MLE using prior (additional informaton)`
+
+-   Prior
+
+    -   beleive we have for the distribution
+
+-   formula
+
+    -   <img src="https://render.githubusercontent.com/render/math?math=\hat{\theta}_{MAP} = arg max_{\theta} \mathcal{L}(\theta|x_1 ... x_n) \ast \pi (\theta)">
+
+    -   &pi;(&theta;) is the prior / additional information
+
+## Bayes' & Decision
+
+### Intro to Bayes Theorem
+
+#### Bayes' Rule
+
+1. <img src="https://render.githubusercontent.com/render/math?math=P(A,B) = P(A|B) P(B)">
+
+2. <img src="https://render.githubusercontent.com/render/math?math=P(A,B) = P(B|A) P(A)">
+
+3. <img src="https://render.githubusercontent.com/render/math?math=P(A|B) = \frac{P(B|A)P(A)}{P(B)}">
+
+``` any combination of discrete and conti RV can also be studied```
+- e.g. 
+
+    - X = discrete RV; Y = conti RV
+
+    - <img src="https://render.githubusercontent.com/render/math?math=P(X=x|Y=y)=\frac{f_{Y|X=x}(y)P(X=x)}{f_Y(y)}">
+
+#### Posterior, Likelihood, Priors, Marginal
+
+``` 
+Marginal is usually a constant that could be dropped
+```
+
+<img src="https://render.githubusercontent.com/render/math?math=posterior = \frac{likelihood \ast prior}{marginal}">
+
+##### Given <br> <img src="https://render.githubusercontent.com/render/math?math=P(A|B) = \frac{P(B|A)P(A)}{P(B)}">
+
+1. Posterior
+    - <img src="https://render.githubusercontent.com/render/math?math=\\(P(A|B)\\)">
+
+2. Likelihood
+    - <img src="https://render.githubusercontent.com/render/math?math=\\(P(B|A)\\)">
     
-    - beleive we have for the distribution
+3. Priors
+    - <img src="https://render.githubusercontent.com/render/math?math=\\(P(A)\\)">
 
-- formula 
-
-    - <img src="https://render.githubusercontent.com/render/math?math=\hat{\theta}_{MAP} = arg max_{\theta} \mathcal{L}(\theta|x_1 ... x_n) \ast \pi (\theta)">
-
-    - &pi;(&theta;) is the prior / additional information
-
-
-## Decisions, loss and priors
-
-## Priors 
+4. Marginal
+    - <img src="https://render.githubusercontent.com/render/math?math=\\(P(B)\\)">
 
 
 
+### Inference and Decisions
 
-
-
-
-
-
-
-
+## Priors
 
 # bayesian infernce w mcmc (Markov Chain Monte Carlo)
 
