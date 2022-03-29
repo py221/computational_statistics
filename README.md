@@ -351,6 +351,40 @@ Marginal is usually a constant that could be dropped
 
 ### Inference and Decisions
 
+1. Goal f binary decisions
+<img src="https://render.githubusercontent.com/render/math?math=\text{argmin } p(mistake) = \sum_{i=1}^k p(x_{k \notin j},C_k)"> <br>
+where j/k are class labels
+
+<br>
+<br>
+
+#### Rejection regions or decision boundaries <br>
+
+In our decision, we may choose a region for inclusion in one class or another, for instance, we may decide the optimal boundary in our disease classification is at <img src="https://render.githubusercontent.com/render/math?math=p(disease|pstv\_test) > 0.75">.<br>
+<br>
+Note that the decision boundary should partition the space.  Written with a decision boundary, <br>
+<img src="https://render.githubusercontent.com/render/math?math=\text{argmin} p(mistake) = \int_{R_1} p(x,C_2) dx + \int_{R_2} p(x,C_1) dx">
+ 
+#### Loss Function
+```
+serving the purpose to minimize mistakes
+```
+
+- <img src="https://render.githubusercontent.com/render/math?math=E[loss] = \sum_k \sum_j \int_{R_j} L_{kj}p(x,C_k) dx">
+
+##### Loss Functions f Categorical 
+
+1. Cross Entropy loss
+
+2. Categorical cross entropy loss
+
+3. Focal loss
+
+4. Hinge loss
+
+##### Loss Functions f Conti 
+
+
 ## Priors
 
 # bayesian infernce w mcmc (Markov Chain Monte Carlo)
