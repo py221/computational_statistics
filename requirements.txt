@@ -1,0 +1,7 @@
+numpy>=2.0
+scipy>=1.11
+matplotlib>=3.8
+pytest>=8.0
+# only needed for stage 07 (the script prints a clear message if missing)
+pymc>=5.10
+arviz>=0.17
